@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="370" height="393" viewBox="0 0 370 393">
+    <g data-name="그룹 94522" transform="translate(15056 17667)">
+        <rect data-name="사각형 477" width="370" height="393" rx="4" transform="translate(-15056 -17667)" style="fill:#fff"/>
+        <g data-name="그룹 94529">
+            <text transform="translate(-15026 -17438)" style="font-family:Pretendard-Regular,Pretendard;fill:#242424;font-size:15px"><tspan x="0" y="14">IP</tspan></text>
+            <g data-name="그룹 93973">
+                <g data-name="사각형 11" transform="translate(-14930 -17448)" style="stroke:#555;fill:#fff">
+                    <rect width="224" height="38" rx="4" style="stroke:none"/>
+                    <rect x=".5" y=".5" width="223" height="37" rx="3.5" style="fill:none"/>
+                </g>
+                <text transform="translate(-14918 -17424)" style="font-family:Pretendard-Medium,Pretendard;font-weight:500;fill:#242424;font-size:15px" data-name="그룹 93781"><tspan x="0" y="0">abcd123</tspan></text>
+            </g>
+        </g>
+        <g data-name="그룹 94533">
+            <text transform="translate(-15026 -17392)" style="font-family:Pretendard-Regular,Pretendard;fill:#242424;font-size:15px"><tspan x="0" y="14">권한</tspan></text>
+            <g data-name="그룹 93973">
+                <g data-name="사각형 11" transform="translate(-14930 -17402)" style="stroke:#555;fill:#fff">
+                    <rect width="224" height="38" rx="4" style="stroke:none"/>
+                    <rect x=".5" y=".5" width="223" height="37" rx="3.5" style="fill:none"/>
+                </g>
+                <g data-name="그룹 93781">
+                    <text data-name="Python 3" transform="translate(-14918 -17378)" style="font-family:Pretendard-Medium,Pretendard;font-weight:500;fill:#242424;font-size:15px"><tspan x="0" y="0">Python 3</tspan></text>
+                </g>
+            </g>
+        </g>
+        <g data-name="그룹 94532">
+            <text transform="translate(-15026 -17530)" style="font-family:Pretendard-Regular,Pretendard;fill:#242424;font-size:15px"><tspan x="0" y="14">사번</tspan></text>
+            <g data-name="그룹 93973">
+                <g data-name="사각형 11" transform="translate(-14930 -17540)" style="stroke:#555;fill:#fff">
+                    <rect width="224" height="38" rx="4" style="stroke:none"/>
+                    <rect x=".5" y=".5" width="223" height="37" rx="3.5" style="fill:none"/>
+                </g>
+                <g data-name="그룹 93781">
+                    <text data-name="123456" transform="translate(-14918 -17516)" style="font-family:Pretendard-Medium,Pretendard;font-weight:500;fill:#242424;font-size:15px"><tspan x="0" y="0">123456</tspan></text>
+                </g>
+            </g>
+        </g>
+        <g data-name="그룹 94530">
+            <text transform="translate(-15026 -17484)" style="font-family:Pretendard-Regular,Pretendard;fill:#242424;font-size:15px"><tspan x="0" y="14">패스워드</tspan></text>
+            <g data-name="그룹 93973">
+                <g data-name="사각형 11" transform="translate(-14930 -17494)" style="stroke:#555;fill:#fff">
+                    <rect width="224" height="38" rx="4" style="stroke:none"/>
+                    <rect x=".5" y=".5" width="223" height="37" rx="3.5" style="fill:none"/>
+                </g>
+                <g data-name="그룹 93781">
+                    <text data-name="********" transform="translate(-14918 -17470)" style="font-family:Pretendard-Medium,Pretendard;font-weight:500;fill:#242424;font-size:15px"><tspan x="0" y="0">********</tspan></text>
+                </g>
+            </g>
+        </g>
+        <g data-name="그룹 94531">
+            <text transform="translate(-15026 -17576)" style="font-family:Pretendard-Regular,Pretendard;fill:#242424;font-size:15px"><tspan x="0" y="14">이름</tspan></text>
+            <g data-name="그룹 93973">
+                <g data-name="사각형 11" transform="translate(-14930 -17586)" style="stroke:#555;fill:#fff">
+                    <rect width="224" height="38" rx="4" style="stroke:none"/>
+                    <rect x=".5" y=".5" width="223" height="37" rx="3.5" style="fill:none"/>
+                </g>
+                <text transform="translate(-14918 -17562)" style="font-family:Pretendard-Medium,Pretendard;font-weight:500;fill:#242424;font-size:15px" data-name="그룹 93781"><tspan x="0" y="0">김교보</tspan></text>
+            </g>
+        </g>
+        <g data-name="그룹 93861" transform="translate(-23081 -19056)">
+            <rect data-name="사각형 1" width="100" height="40" rx="4" transform="translate(8275 1722)" style="fill:#e9eaed"/>
+            <text transform="translate(8325 1747)" style="font-family:Pretendard-Medium,Pretendard;font-weight:500;fill:#242424;font-size:15px"><tspan x="-12.96" y="0">삭제</tspan></text>
+        </g>
+        <g data-name="그룹 93862" transform="translate(-23331 -19056)">
+            <rect data-name="사각형 1" width="100" height="40" rx="4" transform="translate(8413 1722)" style="fill:#e9eaed"/>
+            <text transform="translate(8463 1747)" style="font-family:Pretendard-Medium,Pretendard;font-weight:500;fill:#242424;font-size:15px"><tspan x="-12.96" y="0">수정</tspan></text>
+        </g>
+        <g data-name="그룹 94520" transform="translate(-23443 -19056)">
+            <rect data-name="사각형 1" width="100" height="40" rx="4" transform="translate(8413 1722)" style="fill:#e9eaed"/>
+            <text transform="translate(8463 1747)" style="font-family:Pretendard-Medium,Pretendard;font-weight:500;fill:#242424;font-size:15px"><tspan x="-12.96" y="0">신규</tspan></text>
+        </g>
+        <g data-name="그룹 94491">
+            <path data-name="사각형 19767" transform="translate(-15056 -17617)" style="fill:#767676" d="M0 0h370v1H0z"/>
+            <g data-name="그룹 94490">
+                <g data-name="그룹 94489">
+                    <path data-name="사각형 22263" transform="translate(-15032.27 -17647)" style="fill:none" d="M0 0h89.538v31H0z"/>
+                    <path data-name="사각형 22262" transform="translate(-15036 -17618)" style="fill:#f37726" d="M0 0h97v2H0z"/>
+                </g>
+                <text data-name="사용자 관리" transform="translate(-15026 -17627)" style="font-size:17px;font-family:Pretendard-ExtraBold,Pretendard;font-weight:800;fill:#f37726"><tspan x="0" y="0">사용자 관리</tspan></text>
+            </g>
+        </g>
+    </g>
+</svg>
