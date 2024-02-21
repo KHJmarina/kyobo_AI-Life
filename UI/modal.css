@@ -1,0 +1,220 @@
+.modal{
+    position:absolute;
+    display:none;
+    justify-content: center;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 100;
+}
+.modal.show {
+	display: flex;
+}
+.modal_body {
+    position:absolute;
+    top:50%;
+    width:370px;
+    height:270px;
+    background-color: rgb(255,255,255);
+    border-radius:10px;
+    box-shadow:0 2px 3px 0 rgba(34,36,38,0.15);
+    transform:translateY(-50%);
+}
+.modal_body.popup_large {
+    width: 910px;
+    height: 864px;
+}
+.modal_body.popup_medium {
+    width: 370px;
+    height: 393px;
+}
+
+.modal .tit_area {
+    border-bottom: 1px solid rgba(118, 118, 118, 0.1);
+    padding: 20px 20px 5px 20px;
+}
+.modal .tit_area span {
+    color: #f37726;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.modal .cont_area {
+    padding: 20px;
+    font-size: 15px;
+    color: #242424;
+}
+.modal .cont_area .select_area, .radio_area {
+    padding: 11px 0;
+}
+
+.modal .select_area span {
+    display: inline-block;
+    width: 110px;
+}
+.modal .select_area select {
+    border: 1px solid #555555;
+    width: 214px;
+    height: 38px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0 5px;
+}
+.modal .radio_area span {
+    display: inline-block;
+    width: 110px;
+}
+.modal .radio_area .radio_btn {
+    display: inline-block;
+    width: 214px;
+    height: 25px;
+}
+.modal .radio_area .radio_btn label {
+    display: inline-block;
+    width: 105px;
+}
+
+.modal .btn_area {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.modal .modal_ok {
+    background-color: #f37726;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+}
+.modal .modal_close {
+    background-color: #e9eaed;
+    color: #242424;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.pl-114 {
+    padding-left: 114px;
+}
+
+
+
+.modal .popCont_area .snb_inner {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 32px);
+    padding: 21px 0;
+}
+.modal .popCont_area .snb_inner .snb_header {
+    position: relative;
+}
+.modal .popCont_area .snb_inner .snb_header .snb_task {
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.modal .popCont_area .snb_task .tablinksPop {
+    border-bottom: 1px solid rgba(48, 48, 56);
+    line-height: 14px;
+    padding: 12px 0 10px;
+    display: table-cell;
+    width: 20%;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+.modal .popCont_area .snb_task .tablinksPop.active {
+    border-bottom: 1px solid #fc6d00 !important;
+    color: #fc6d00;
+    font-weight: 700;
+}
+.modal .popCont_area .tab_line {
+    border-bottom: 1px solid rgba(48, 48, 56);
+    line-height: 14px;
+    padding: 12px 10px 10px 0;
+    display: table-cell;
+    width: 60%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal .popCont_area .snb_inner .scroll_area { 
+    padding: 30px 20px 0 20px;
+}
+.modal .scroll_area .sidenav .top_search {
+    height: 50px;
+}
+.modal .scroll_area .sidenav span.popup_tit {
+    width: 120px;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.modal .scroll_area .sidenav input {
+    width: 242px;
+    height: 46px;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+}
+.modal .scroll_area .sidenav .calendar {
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+    color: #bbbbbb;
+}
+.modal .scroll_area .sidenav button {
+    width: 100px;
+    height: 40px;
+    background-color: #f37726;
+    border-radius: 4px;
+    color: #fff;
+    border: 0;
+    position: fixed;
+    right: 20px;
+    margin: 4px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+.modal .scroll_area .popup_table {
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
+}
+
+.modal .btn_center {
+    position: fixed;
+    bottom: 20px;
+    right:calc(50% - 50px);
+}
+
+
+.modal_body .db_backimg {
+    width: 910px;
+    height:864px;
+    background: url(img/pop_db.png) no-repeat;
+    background-size: 100%;
+    display: block;
+}
+.modal_body .user_backimg {
+    width: 370px;
+    height:393px;
+    background: url(img/pop_user.svg) no-repeat;
+    background-size: 100%;
+    display: block;
+}

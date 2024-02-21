@@ -1,0 +1,137 @@
+html, body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+}
+html #root {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    font-family: "pretendard";
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0px;
+}
+ul {
+    list-style: none; 
+}
+a {
+    text-decoration-line: none;
+}
+button, input, select, textarea {
+    border-radius: 0;
+    border: none;
+    background: 0 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-text-size-adjust: none;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 104px;
+}
+
+/* 좌측 영역 */
+.left_inner {
+    display: inline-block;
+    height: 100%;
+    padding-right: 353px;
+}
+.logo_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 291px;
+}
+.logo_inner .logo_area {
+    display: block;
+    background: url(img/kico_logo.png) no-repeat;
+    background-size: 100%;
+    height: 92px;
+    width: 100%;
+}
+.logo_inner .sTxt_area {
+    color: #242424;
+    font-size: 22px;
+    line-height: 24px;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+/* 우측 영역 */
+.right_inner {
+    display: inline-block; height: 100%;
+}
+.right_inner .login_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 291px;
+}
+.right_inner .login_inner .txt_area {
+    font-size: 18px;
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+.right_inner .login_inner input {
+    width:416px;
+    height: 46px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 12px;
+}
+.right_inner .login_inner input::placeholder {
+    color: #bbbbbb;
+    font-size: 16px;
+}
+
+.right_inner .login_inner .subTxt_area {
+    width: 442px;
+    margin-top: 8px;
+}
+.subTxt_area .sub_txt {
+    color: #bbbbbb;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.right_inner .login_inner button {
+    display: block;
+    width: 442px;
+    padding: 24px 0;
+    border-radius: 6px;
+    background-color: #f37726;
+    box-sizing: border-box;
+}
+.right_inner .login_inner button span {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
+}
+.subTxt_area .error_txt {
+    color: #e64c2e;
+    font-size: 14px;
+    line-height: 24px;
+    display: none;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+.mt-30 {
+    margin-top: 30px;
+}

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="AI_main.js"></script>
+    <link href="AI_main.css" rel="stylesheet">
+    <link href="modal.css" rel="stylesheet">
+</head>
+<body>
+<div>
+    <!-- 최상단 메뉴바 -->
+    <header>
+        <div class="header">
+            <!-- 로고 -->
+            <h1>
+                <a href="">
+                    <span class="kico_logo"></span>
+                </a>
+            </h1>
+            <!-- 로그인 영역 -->
+            <div class="login_group">
+                <div class="gnb">
+                    <!-- 로그아웃 등 버튼-->
+                    <ul class="gnb_lst">
+                        <!-- 우측 슬라이드 온오프 -->
+                        <li onclick="openRnb()" class="gnb_onoff_li">
+                            <div class="logo_area">
+                                <span class="gnb_icon"></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="gnb_lst">
+                        <li class="gnb_lst_li" id="gnb_my_layer">
+                            <a id="gnb_my" class="gnb_my">
+                                <span class="icon_mypage">
+                                    <div class="gnb_icon"></div>
+                                </span>
+                                <span class="gnb_txt">홍길동님</span>
+                            </a>
+                        </li>
+                        <li class="gnb_lst_li" id="gnb_my_layer">
+                            <a id="gnb_my" class="gnb_my">
+                                <span class="gnb_txt">로그아웃</span>
+                                <span class="icon_logout">
+                                    <div class="gnb_icon"></div>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 최상단 메뉴 -->
+            <div class="gnb_area">
+                <div class="gnb_list_box">
+                    <div class="gnb_first">
+                        <ul>
+                            <li><a href="#modal-user" class="btn-open">사용자 관리</a></li>
+                            <li><a href="#modal-gnb" class="btn-open">직업 관리</a></li>
+                            <li>Session 관리</li>
+                            <li>AWS 리소스 관리</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div>
+        <!-- 중앙 주피터 링크 연결 영역 -->
+        <div id="wrap" class="wrap">
+            <div class="container">
+                <iframe src="https://15.164.19.60.nip.io/notebooks/Untitled.ipynb" width="100%" height="100%" frameborder="0" class="giphy-embed" sandbox="allow-scripts allow-same-origin"></iframe>
+            </div>
+        </div>
+
+        <!-- 좌측 슬라이드 on -->
+        <nav id="snb" class="snb">
+            <div class="snb_inner">
+                <div class="snb_header">
+                    <!-- 왼쪽 탭 메뉴-->
+                    <div class="snb_task">
+                        <a class="item tablinks" id="defaultOpen" onclick="openTab(event, 'File')">
+                            <span>File</span>
+                        </a>
+                        <a class="item tablinks" onclick="openTab(event, 'DB')">
+                            <span>DB</span>
+                        </a>
+                        <!-- 햄버거 바-->
+                        <div onclick="openSnb()" class="snb_hamburger tab_hamburger">
+                            <a class="item">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 왼쪽 탭의 내용 영역 -->
+                <div class="scroll_area">
+                    <div id="File" class="tabcontent">
+                        <div class="sidenav" id="navFile">
+                        </div>
+                    </div>
+                    <div id="DB" class="tabcontent">
+                        <div class="sidenav" id="navDB">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- 좌측 슬라이드 off -->
+        <nav id="snb_icon" class="snb_icon">
+            <div class="snb_inner_icon">
+                <ul class="snb_header">
+                    <li onclick="openSnb()" class="snb_task">
+                        <a class="item">
+                            <span></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- 우측 슬라이드 -->
+        <div id="rnb" class="rnb">
+            <div class="rnb_graph" style="display: block;">
+                <div class="graph_area">
+                    <div class="graph_inner pb-20">
+                        <div class="graph_tit">사용량</div>
+                        <div class="graph_task">
+                            <div class="chart_set"></div>
+                            <div class="chart_set"></div>
+                        </div>
+                    </div>
+                    <div class="graph_inner">
+                        <div class="graph_tit">서버 메모리</div>
+                        <div class="graph_task">
+                            <div class="chart_set"></div>
+                            <div class="chart_set"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rnb_inner">
+                <div class="rnb_header">
+                    <div class="rnb_task">
+                        <a href="#modal_gpu" class="item1 open-modal-gpu btn-open">
+                            <span>GPU 선택</span>
+                        </a>
+                        <a href="#modal_cpu" class="item2 open-modal-cpu btn-open">
+                            <span>CPU 선택</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="rnb_chart">
+                <div class="chart_inner">
+                    <div class="chart_area">
+                        <div class="chart_txt">GPU가 <span class="chartTxt">80%</span>를 초과하였습니다.</div>
+                        <div class="chart_bar">
+                            <div class="bar_per w80per"></div>
+                        </div>
+                        <div class="chart_time">13시 50분</div>
+                    </div>
+                    <div class="chart_area">
+                        <div class="chart_txt">GPU가 <span class="chartTxt">50%</span>를 초과하였습니다.</div>
+                        <div class="chart_bar">
+                            <div class="bar_per w50per"></div>
+                        </div>
+                        <div class="chart_time">11시 50분</div>
+                    </div>
+                    <div class="chart_area">
+                        <div class="chart_txt">GPU가 <span class="chartTxt">90%</span>를 초과하였습니다.</div>
+                        <div class="chart_bar">
+                            <div class="bar_per w90per"></div>
+                        </div>
+                        <div class="chart_time">9시 50분</div>
+                    </div>
+                    <div class="chart_area">
+                        <div class="chart_txt">GPU가 <span class="chartTxt">10%</span>를 초과하였습니다.</div>
+                        <div class="chart_bar">
+                            <div class="bar_per w10per"></div>
+                        </div>
+                        <div class="chart_time">7시 50분</div>
+                    </div>
+                </div>
+            </div>
+            <div class="rnb_input">
+                <div class="input_area"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal popup 영역 start -->
+    <!-- 모달 팝업 GPU -->
+    <div id="modal_gpu" class="modal">
+        <div class="modal_body">
+            <div class="tit_area">
+                <span>런타임 유형 변경</span>
+            </div>
+            <div class="cont_area">
+                <div class="select_area">
+                    <span>런타임유형</span>
+                    <select>선택해주세요
+                        <option value="none" selected>선택해주세요</option>
+                        <option value="run1">런타임유형1</option>
+                        <option value="run2">런타임유형2</option>
+                        <option value="run3">런타임유형3</option>
+                    </select>
+                </div>
+                <div class="radio_area">
+                    <span>하드웨어 가속기</span>
+                    <div class="radio_btn">
+                        <label><input type="radio" name="fruit" value="apple"> GPU</label>
+                        <label><input type="radio" name="fruit" value="apple"> GPU</label>
+                    </div>
+                    <div class="radio_btn pl-114">
+                        <label><input type="radio" name="fruit" value="apple"> GPU</label>
+                        <label><input type="radio" name="fruit" value="apple"> GPU</label>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_area">
+                <button id="modal_ok_gpu" class="modal_ok">확인</button>
+                <button id="modal_close_gpu" class="modal_close">닫기</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 모달 팝업 CPU -->
+    <div id="modal_cpu" class="modal">
+        <div class="modal_body">
+            <div class="tit_area">
+                <span>런타임 유형 변경</span>
+            </div>
+            <div class="cont_area">
+                <div class="select_area">
+                    <span>런타임유형</span>
+                    <select>선택해주세요
+                        <option value="none" selected>선택해주세요</option>
+                        <option value="run1">런타임유형1</option>
+                        <option value="run2">런타임유형2</option>
+                        <option value="run3">런타임유형3</option>
+                    </select>
+                </div>
+                <div class="radio_area">
+                    <span>하드웨어 가속기</span>
+                    <div class="radio_btn">
+                        <label><input type="radio" name="fruit" value="apple"> CPU</label>
+                        <label><input type="radio" name="fruit" value="apple"> CPU</label>
+                    </div>
+                    <div class="radio_btn pl-114">
+                        <label><input type="radio" name="fruit" value="apple"> CPU</label>
+                        <label><input type="radio" name="fruit" value="apple"> CPU</label>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_area">
+                <button id="modal_ok_cpu" class="modal_ok">확인</button>
+                <button id="modal_close_cpu" class="modal_close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- modal popup 영역 end -->
+
+    <!-- 탭이 들어간 팝업 -->
+    <div id="modal-gnb" class="modal">
+        <div class="modal_body popup_large">
+            <div class="popCont_area">
+                <div class="snb_inner">
+                    <div class="snb_header">
+                        <!-- 탭 메뉴 -->
+                        <div class="snb_task">
+                            <a class="item tablinksPop" id="defaultOpenModal" onclick="openTabPop(event, 'Login')">
+                                <span>로그인 History</span>
+                            </a>
+                            <a class="item tablinksPop" onclick="openTabPop(event, 'Usage')">
+                                <span>사용량 관리</span>
+                            </a>
+                            <div class="tab_line"></div>
+                        </div>
+                    </div>
+
+                    <div class="scroll_area">
+                        <!-- 로그인 History -->
+                        <div id="Login" class="tabcontentPop">
+                            <div class="sidenav" id="navLogin">
+                                <div class="top_search">
+                                    <span class="popup_tit">로그인 일자</span>
+                                    <input type="date"
+                                            id="startDate"
+                                            max="9999-12-31"
+                                            min="1900-01-01" />
+                                    <span class="calendar"> ~ </span>
+                                    <input type="date"
+                                            id="endDate"
+                                            max="9999-12-31"
+                                            min="1900-01-01" />
+                                    <button>검색</button>
+                                </div>
+                                <div class="popup_table">표가 들어갈 div 영역입니다. 링크 들어가면 텍스트는 삭제</div>
+                            </div>
+                        </div>
+                        <!-- 사용량 관리 -->
+                        <div id="Usage" class="tabcontentPop">
+                            <div class="sidenav" id="navUsage">
+                                <div class="top_search">
+                                    <span class="popup_tit">로그인 일자</span>
+                                    <input type="date"
+                                            id="startDate"
+                                            max="9999-12-31"
+                                            min="1900-01-01" />
+                                    <span class="calendar"> ~ </span>
+                                    <input type="date"
+                                            id="endDate"
+                                            max="9999-12-31"
+                                            min="1900-01-01" />
+                                    <button>검색</button>
+                                </div>
+                                <div class="popup_table">표가 들어갈 div 영역입니다. 링크 들어가면 텍스트는 삭제</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_center">
+                <button id="modal_ok_gnb" class="modal_ok">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 이미지만 적용된 팝업 2종. DB 팝업 확인 -->
+    <div id="modal-db" class="modal">
+        <div class="modal_body popup_large">
+            <div class="db_backimg">
+            </div>
+        </div>
+    </div>
+
+    <!-- 이미지만 적용된 팝업 2종. 사용자 관리 -->
+    <div id="modal-user" class="modal">
+        <div class="modal_body popup_medium">
+            <div class="user_backimg">
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
